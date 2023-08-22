@@ -1,0 +1,20 @@
+{% extends 'reg/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="{% static 'reg/img/yapca_logo_150.webp' %}" alt="" width="150" height="150">
+    <h1 class="display-5 fw-bold">YAPCA Registration</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Here you can manage your registration information for YAPCA sessions and events. To get started, you will need to register to use the site. If you've already registered, you can login now.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="{% url 'register' %}" class="btn btn-primary btn-lg px-4 gap-3">Register</a>
+            <a href="#" class="btn btn-outline-secondary btn-lg px-4">Login</a>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
